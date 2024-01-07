@@ -27,12 +27,12 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
         <br />
         <br />
         <p className="font-light text-2xl overflow-clip mx-auto max-w-screen-md ">
-          Nellgram is here to share a piece of Kerala's heartwarming food
+          Nellgram is here to share a piece of Kerala&apos;s heartwarming food
           culture with you in Dubai. Experience the pure goodness of rice
           varieties and breakfast mixes without the worry of artificial
           preservatives.Each and every product we serve carries the essence of
-          tradition, offering you a taste of home that's real, honest, and
-          delicious. Your kitchen deserves the best, and we're here to deliver
+          tradition, offering you a taste of home that&apos;s real, honest, and
+          delicious. Your kitchen deserves the best, and we&apos;re here to deliver
           it to your doorstep!
         </p>
       </div>

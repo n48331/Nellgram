@@ -56,6 +56,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     return (
                       <>
                         <Link
+                        key={index}
                           href="#"
                           className="text-white"
                         >
@@ -77,6 +78,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                   }
                   return (
                     <Link
+                    key={index}
                       href={items.href}
                       className="text-white rounded-md px-3 py-2 text-sm font-semibold"
                       aria-current="page"
@@ -126,8 +128,9 @@ const Header: FunctionComponent<HeaderProps> = () => {
           <div className="mt-6 px-6 py-6 flow-root text-theme-color ">
             <div className="-my-6 py-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 divide-y divide-gray-500/10">
-                {navLinks.map((items)=><div className="py-4 cursor-pointer">
+                {navLinks.map((items,index)=><div key={index} className="py-4 cursor-pointer">
                   <Link
+                  
                     href="#"
                     className="text-sm font-semibold"
                     aria-current="page"
