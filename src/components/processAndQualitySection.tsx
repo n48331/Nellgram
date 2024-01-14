@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FunctionComponent } from "react";
 import PuttuPodi from "../../public/image/puttupodi.jpeg";
+import Link from "next/link";
 
 interface ProcessAndQualityProps {}
 
@@ -26,12 +27,14 @@ const ProcessAndQuality: FunctionComponent<ProcessAndQualityProps> = () => {
             doloribus veritatis ratione aperiam tempora saepe recusandae
             voluptatum facere sit odit doloremque repudiandae.
           </p>
+          <Link href={'/quality'}>
           <button className="flex gap-1 items-center mt-8">
             <span>See More</span>
             <span className="rounded-full border-2 md:bg-primary border-black px-2">
               {">"}
             </span>
           </button>
+          </Link>
         </div>
       </div>{" "}
     </section>

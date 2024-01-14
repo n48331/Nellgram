@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 import ProductCard from "./products";
 import PuttuPodi from "../../public/image/puttupodi.jpeg";
+import Link from "next/link";
 
 interface ProductSectionProps {}
 
@@ -29,9 +30,11 @@ const ProductSection: FunctionComponent<ProductSectionProps> = () => {
         />
       </div>
       <div className="mt-8 relative">
+        <Link href={'/products'}>
         <button className="bg-theme-color text-white rounded-full px-4 py-2">
           view All
         </button>
+        </Link>
       </div>
     </section>
   );
