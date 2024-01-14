@@ -10,7 +10,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
       id="footer"
     >
       <div className="w-full h-full my-8 flex flex-col md:flex-row px-16 justify-between gap-6 ">
-        <div className="flex flex-col w-full md:w-[50%]">
+        <div className="flex flex-col w-full md:w-[50%]" id="contact">
           <div className="flex flex-col gap-6 text-lg font-medium">
             <div className="flex gap-2 items-center">
               <div>

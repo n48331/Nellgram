@@ -7,7 +7,7 @@ const CustomerReview: FunctionComponent<CustomerReviewProps> = () => {
   return (
     <section
       className=" flex flex-col justify-around items-center px-16 pb-28"
-      id=""
+      id="review"
     >
       <h4 className="font-semibold text-4xl">From our Customer</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center  mt-8">

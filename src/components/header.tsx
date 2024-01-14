@@ -1,38 +1,40 @@
+/* eslint-disable react/jsx-key */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/image/logoWhite.jpeg";
 import greenLogo from "../../public/image/logoGreen.jpeg";
 import smallLogo from "../../public/image/small-logo.jpeg";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import { it } from "node:test";
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
     {
       title: "PRODUCTS",
-      href: "",
+      href: "#products",
     },
     {
       title: "RECIPES",
-      href: "",
+      href: "#recipes",
     },
     {
       title: "ABOUT US",
-      href: "",
+      href: "#about",
     },
     {
       title: "CONTACT",
-      href: "",
+      href: "#contact",
     },
   ];
   return (
     <div className="w-full md:bg-theme-color">
       <nav className="mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-fit items-center justify-between">
-          <div className="flex flex-1 items-center md:items-center md:justify-between">
+          <div className="flex md:flex-1 items-center md:items-center md:justify-between">
             <div className="flex flex-shrink-0 items-center justify-between">
               <Image
                 src={logo}
@@ -52,14 +54,10 @@ const Header: FunctionComponent<HeaderProps> = () => {
             <div className="hidden sm:ml-6 md:block">
               <div className="flex space-x-4 items-center">
                 {navLinks.map((items, index) => {
-                  if (index  === navLinks.length / 2) {
+                  if (index === navLinks.length / 2) {
                     return (
                       <>
-                        <Link
-                        key={index}
-                          href="#"
-                          className="text-white"
-                        >
+                        <Link href="#" className="text-white">
                           <Image
                             src={smallLogo}
                             alt={"small logo"}
@@ -77,8 +75,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     );
                   }
                   return (
+                    // eslint-disable-next-line react/jsx-key
                     <Link
-                    key={index}
                       href={items.href}
                       className="text-white rounded-md px-3 py-2 text-sm font-semibold"
                       aria-current="page"
@@ -90,9 +88,52 @@ const Header: FunctionComponent<HeaderProps> = () => {
               </div>
             </div>
           </div>
+          <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+            <button
+              type="button"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-theme-color"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              onClick={() => setIsOpen((prev) => !prev)}
+            >
+              <svg
+                className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+
+              <svg
+                className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
-      <div className="hidden md:hidden" role="dialog" aria-modal="true">
+      <div
+        className={`${isOpen ? "block" : "hidden"} md:hidden`}
+        role="dialog"
+        aria-modal="true"
+      >
         <div className="fixed inset-0 z-10"></div>
         <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between bg-theme-color px-6 py-2">
@@ -106,9 +147,10 @@ const Header: FunctionComponent<HeaderProps> = () => {
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-full p-1 text-theme-color font-semibold border-2 border-white bg-white "
+              className="-m-2.5 rounded-full p-1 text-theme-color font-semibold border-2 border-white bg-white"
+              onClick={()=>setIsOpen(prev=>false)}
             >
-              <span className="sr-only">Close menu</span>
+              
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -128,16 +170,18 @@ const Header: FunctionComponent<HeaderProps> = () => {
           <div className="mt-6 px-6 py-6 flow-root text-theme-color ">
             <div className="-my-6 py-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 divide-y divide-gray-500/10">
-                {navLinks.map((items,index)=><div key={index} className="py-4 cursor-pointer">
-                  <Link
-                  
-                    href="#"
-                    className="text-sm font-semibold"
-                    aria-current="page"
-                  >
-                    {items.title}
-                  </Link>
-                </div>)}
+                {navLinks.map((items) => (
+                  <div className="py-4 cursor-pointer" key={items.title}>
+                    <Link
+                      href={items.href}
+                      className="text-sm font-semibold"
+                      aria-current="page"
+                      key={items.title}
+                    >
+                      {items.title}
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
