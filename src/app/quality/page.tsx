@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FunctionComponent } from "react";
-import qualityBanner from "../../../public/image/qualityBanner.png";
+import qualityBanner from "../../../public/image/quality/banner.jpg";
 import qualityImage from "../../../public/image/noname.png";
 interface QuallityPageProps {}
 
@@ -18,7 +18,7 @@ const QuallityPage: FunctionComponent<QuallityPageProps> = () => {
         <div className="text-xl md:text-4xl font-semibold text-center">
           <h3 className="">Quality and Processing</h3>
         </div>
-        <div className="py-4 md:py-8 md:leading-10 md:text-2xl font-medium ">
+        <div className="py-4 px-10 md:py-8 md:leading-10 md:text-xl font-medium ">
           <p>
             The production of all Nellgram products takes place at VIDYANAGAR
             OIL ANDFLOUR MILL in Kasaragod. With a legacy spanning over 30
