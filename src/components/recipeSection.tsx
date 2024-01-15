@@ -1,7 +1,7 @@
 "use client";
 import { FunctionComponent } from "react";
 import RecipesCard from "./recipes";
-import PuttuPodi from "../../public/image/puttupodi.jpeg";
+import PuttuPodi from "../../public/image/recipe/unniyappam.jpg";
 import { motion } from "framer-motion";
 interface RecipeSectionProps {}
 

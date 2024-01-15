@@ -7,7 +7,7 @@ interface QuallityPageProps {}
 const QuallityPage: FunctionComponent<QuallityPageProps> = () => {
   return (
     <main>
-      <div className="h-[30vh] sm:h-[40vh] md:h-[45vh] w-[100vw] relative overflow-hidden">
+      <div className="h-[30vh] sm:h-[40vh] md:h-[45vh] w-[100%] relative overflow-hidden">
         <Image
           src={qualityBanner}
           alt={"banner"}
