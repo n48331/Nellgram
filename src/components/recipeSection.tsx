@@ -1,7 +1,8 @@
+"use client";
 import { FunctionComponent } from "react";
 import RecipesCard from "./recipes";
 import PuttuPodi from "../../public/image/puttupodi.jpeg";
-
+import { motion } from "framer-motion";
 interface RecipeSectionProps {}
 
 const RecipeSection: FunctionComponent<RecipeSectionProps> = () => {
@@ -38,9 +39,12 @@ const RecipeSection: FunctionComponent<RecipeSectionProps> = () => {
         />
       </div>
       <div className="mt-8">
-        <button className="bg-theme-color text-white rounded-full px-4 py-2">
+        <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+         className="bg-theme-color text-white rounded-full px-4 py-2">
           view All
-        </button>
+        </motion.button>
       </div>
     </section>
   );

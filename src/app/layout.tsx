@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600"],
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <NextTopLoader />
         <main className="flex flex-col items-center justify-between relative">
           <Header />
           {children}

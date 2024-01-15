@@ -1,8 +1,9 @@
+"use client";
 import { FunctionComponent } from "react";
 import ProductCard from "./products";
 import PuttuPodi from "../../public/image/puttupodi.jpeg";
 import Link from "next/link";
-
+import { motion } from "framer-motion"
 interface ProductSectionProps {}
 
 const ProductSection: FunctionComponent<ProductSectionProps> = () => {
@@ -31,9 +32,12 @@ const ProductSection: FunctionComponent<ProductSectionProps> = () => {
       </div>
       <div className="mt-8 relative">
         <Link href={'/products'}>
-        <button className="bg-theme-color text-white rounded-full px-4 py-2">
+        <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="bg-theme-color text-white rounded-full px-4 py-2">
           view All
-        </button>
+        </motion.button>
         </Link>
       </div>
     </section>

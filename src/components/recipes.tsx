@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FunctionComponent } from "react";
-
+import { motion } from "framer-motion"
 interface RecipesCardProps {
   photo: {
     src: string | any;
@@ -16,7 +16,10 @@ const RecipesCard: FunctionComponent<RecipesCardProps> = ({
   title,
 }) => {
   return (
-    <div className="w-72 h-72 bg-white rounded-lg shadow-md ">
+    <motion.div 
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    className="w-72 h-72 bg-white rounded-lg shadow-md ">
       <div className="h-[50%] mx-auto bg-gray-200 rounded-lg relative overflow-hidden">
         <Image
           src={photo.src}
@@ -32,7 +35,7 @@ const RecipesCard: FunctionComponent<RecipesCardProps> = ({
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

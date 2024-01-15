@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import Image from "next/image";
 import { FunctionComponent } from "react";
 
@@ -13,7 +14,12 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({
   alt,
 }) => {
   return (
-    <div className="w-72 h-74 relative">
+    <motion.div className="w-72 h-74 relative"
+    initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    >
       <div className="h-[75%] w-[75%] h-max-[94px] w-max-[93px] mx-auto rounded-xl relative overflow-hidden top-[10px]">
         <Image
           src={image}
@@ -26,7 +32,7 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({
       <div className="w-[100%]  h-[30%]  bg-card-title-bg rounded-lg  text-center font-medium text-xl flex items-center justify-center bottom-0 shadow-md">
         <p>{title}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

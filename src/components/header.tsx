@@ -6,28 +6,40 @@ import logo from "../../public/image/logoWhite.jpeg";
 import greenLogo from "../../public/image/logoGreen.jpeg";
 import smallLogo from "../../public/image/small-logo.jpeg";
 import { FunctionComponent, useState } from "react";
-import { it } from "node:test";
+import { motion } from "framer-motion"
 
-interface HeaderProps {}
+const container = {
+  hide: {},
+  show: {
+    transition: {
+      delay: 1,
+      type: "spring",
+      duration: 0.15,
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+interface HeaderProps { }
 
 const Header: FunctionComponent<HeaderProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
     {
       title: "PRODUCTS",
-      href: "#products",
+      href: "/#products",
     },
     {
       title: "RECIPES",
-      href: "#recipes",
+      href: "/#recipes",
     },
     {
       title: "ABOUT US",
-      href: "#about",
+      href: "/#about",
     },
     {
       title: "CONTACT",
-      href: "#contact",
+      href: "/#contact",
     },
   ];
   return (
@@ -130,6 +142,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
         </div>
       </nav>
       <div
+
         className={`${isOpen ? "block" : "hidden"} md:hidden`}
         role="dialog"
         aria-modal="true"
@@ -148,9 +161,9 @@ const Header: FunctionComponent<HeaderProps> = () => {
             <button
               type="button"
               className="-m-2.5 rounded-full p-1 text-theme-color font-semibold border-2 border-white bg-white"
-              onClick={()=>setIsOpen(prev=>false)}
+              onClick={() => setIsOpen(false)}
             >
-              
+
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -171,8 +184,13 @@ const Header: FunctionComponent<HeaderProps> = () => {
             <div className="-my-6 py-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 divide-y divide-gray-500/10">
                 {navLinks.map((items) => (
-                  <div className="py-4 cursor-pointer" key={items.title}>
+                  <motion.div className="py-4 cursor-pointer" key={items.title}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+
+                  >
                     <Link
+                      onClick={() => setIsOpen(false)}
                       href={items.href}
                       className="text-sm font-semibold"
                       aria-current="page"
@@ -180,7 +198,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     >
                       {items.title}
                     </Link>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
