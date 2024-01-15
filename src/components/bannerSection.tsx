@@ -21,12 +21,12 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
           Welcome to Nellgram
         </h4>
         <br />
-        <h5 className="font-semibold text-2xl inline-block">
+        <h5 className="font-semibold text-xl inline-block">
           Welcome to Nellgram where every meal is a journey back home.
         </h5>
         <br />
         <br />
-        <p className="font-light text-2xl overflow-clip mx-auto max-w-screen-md ">
+        <p className="font-light text-xl overflow-clip mx-auto max-w-screen-md ">
           Nellgram is here to share a piece of Kerala&apos;s heartwarming food
           culture with you in Dubai. Experience the pure goodness of rice
           varieties and breakfast mixes without the worry of artificial

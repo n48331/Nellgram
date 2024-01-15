@@ -6,7 +6,7 @@ interface FooterProps {}
 const Footer: FunctionComponent<FooterProps> = () => {
   return (
     <footer
-      className="w-full min-h-[276px] bg-black/75 text-white "
+      className="w-full min-h-[276px] bg-black text-white "
       id="footer"
     >
       <div className="w-full h-full my-8 flex flex-col md:flex-row px-16 justify-between gap-6 ">

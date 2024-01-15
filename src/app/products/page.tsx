@@ -2,13 +2,52 @@ import { FunctionComponent } from "react";
 import productBanner from "../../../public/image/productBanner.jpeg";
 import puttuPodi from "../../../public/image/puttipodi2.png";
 import Image from "next/image";
+import { Card } from "./components/Card";
 
-interface ProductsPageProps {}
+interface ProductsPageProps { }
+
+const products = [
+  {
+    name: 'Puttu Podi',
+    imgURL: 'Puttu podi.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+  {
+    name: 'pathiri podi',
+    imgURL: 'pathiri podi.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+  {
+    name: 'Chilli powder',
+    imgURL: 'Chilli powder.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+  {
+    name: 'Rice powder',
+    imgURL: 'Rice powder.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+  {
+    name: 'Coriander powder',
+    imgURL: 'coriander powder.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+  {
+    name: 'Jeerakasala',
+    imgURL: 'Jeerakasala 5kg.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+  {
+    name: 'Kashmiri Chilli',
+    imgURL: 'kashmiri chilli.jpg',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
+  },
+]
 
 const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
   return (
     <main>
-      <div className="h-[20vh] sm:h-[30vh] md:h-[35vh] w-[100vw] relative overflow-hidden">
+      <div className="h-[20vh] sm:h-[30vh] md:h-[35vh] w-[100%] relative overflow-hidden">
         <Image
           src={productBanner}
           alt={"banner"}
@@ -20,21 +59,9 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
       </div>
       <div className="py-8 md:py-14 lg:py-20">
         <div className="grid container px-4 text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="border-2 rounded-2xl border-[#5707FF]">
-            <div className="p-6 md:p-8 lg:p-10">
-              <Image
-                src={puttuPodi}
-                alt={"banner"}
-                className="rounded-2xl mx-auto"
-              />
-              <div className="my-2 font-semibold text-xl md:text-2xl lg:text-4xl">
-                Puttu Podi
-              </div>
-              <div className="text-sm md:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              </div>
-            </div>
-          </div>
+          {products.map((item, index) => (
+            <Card key={index} imgURL={item.imgURL} title={item.name} desc={item.desc} />
+          ))}
         </div>
       </div>
     </main>

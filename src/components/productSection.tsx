@@ -16,19 +16,20 @@ const ProductSection: FunctionComponent<ProductSectionProps> = () => {
       <div className="flex gap-8 mt-8 px-8 relative w-full justify-center flex-wrap md:flex-nowrap">
         <ProductCard
           title={"PuttuPodi"}
-          image={PuttuPodi}
+          image={'/image/products/Puttu podi.jpg'}
           alt={"puttu podi image"}
         />
         <ProductCard
-          title={"PuttuPodi"}
-          image={PuttuPodi}
-          alt={"puttu podi image"}
+          title={"Chilli powder"}
+          image={'/image/products/Chilli powder.jpg'}
+          alt={"Chilli powder image"}
         />
         <ProductCard
-          title={"PuttuPodi"}
-          image={PuttuPodi}
-          alt={"puttu podi image"}
+          title={"Jeerakasala"}
+          image={'/image/products/Jeerakasala 5kg.jpg'}
+          alt={"Jeerakasala 5kg image"}
         />
+        
       </div>
       <div className="mt-8 relative">
         <Link href={'/products'}>

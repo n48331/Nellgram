@@ -24,8 +24,8 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({
         <Image
           src={image}
           alt={alt}
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           className="object-cover h-full w-full"
         />
       </div>
