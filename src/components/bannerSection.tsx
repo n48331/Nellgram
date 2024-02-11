@@ -1,5 +1,5 @@
 import Image from "next/image";
-import banner from "../../public/image/banner.jpeg";
+import banner from "../../public/image/banner.png";
 import { FunctionComponent } from "react";
 
 interface BannnerSectionProps {}
@@ -17,11 +17,11 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
       </div>
 
       <div className="w-full mx-auto text-center pt-10 md:pt-28 px-8">
-        <h4 className="font-semibold text-4xl inline-block py-4 md:py-8">
+        <h4 className="font-semibold text-5xl inline-block py-4 md:py-8">
           Welcome to Nellgram
         </h4>
         <br />
-        <h5 className="font-semibold text-xl inline-block">
+        <h5 className="font-semibold text-2xl inline-block">
           Welcome to Nellgram where every meal is a journey back home.
         </h5>
         <br />

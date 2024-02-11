@@ -2,8 +2,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/image/logoWhite.jpeg";
-import greenLogo from "../../public/image/logoGreen.jpeg";
+import logo from "../../public/image/nellgram_logo_white.svg";
+import greenLogo from "../../public/image/nellgram_logo_green.svg";
 import smallLogo from "../../public/image/small-logo.jpeg";
 import { FunctionComponent, useState } from "react";
 import { motion } from "framer-motion"
@@ -60,6 +60,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                 alt={"logo"}
                 width={200}
                 height={200}
+                style={{padding:'0 1rem',margin:'1rem 0'}}
                 className="block md:hidden"
               />
             </div>
