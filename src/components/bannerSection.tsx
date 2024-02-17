@@ -39,28 +39,28 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
           delicious. Your kitchen deserves the best, and we&apos;re here to deliver
           it to your doorstep!
         </p>
-        <section className="flex flex-col items-center mt-10 lg:mt-30 lg:flex-row lg:justify-around">
-          <div className="text-yellow-500 flex flex-col items-center mb-4">
-            <PiHandshake className="h-12 w-12" />
-            <h6 className="text-xl">55</h6>
-            <h6>Years Of Trust</h6>
-          </div>
-          <div className="text-yellow-500 flex flex-col items-center  mb-4">
-            <CiFaceSmile className="h-12 w-12" />
-            <h6 className="text-xl">150M+</h6>
-            <h6>Happy Customers</h6>
-          </div>
-          <div className="text-yellow-500 flex flex-col items-center mb-4">
-            <FaRegCheckCircle className="h-12 w-12" />
-            <h6 className="text-xl">100%</h6>
-            <h6>Quality Products</h6>
-          </div>
-          <div className="text-yellow-500 flex flex-col items-center">
-            <GoTrophy className="h-12 w-12" />
-            <h6 className="text-xl">30++</h6>
-            <h6>Awards</h6>
-          </div>
-        </section>
+        <section className="flex flex-col lg:flex-row lg:justify-around">
+            <div className="text-yellow-500 flex flex-col items-center justify-center pt-5  mb-4 lg:mb-0 lg:mt-30">
+              <PiHandshake className="h-12 w-12" />
+              <h6 className="text-xl pt-3">55</h6>
+              <h6>Years Of Trust</h6>
+            </div>
+            <div className="text-yellow-500 flex flex-col items-center justify-center  pt-5  mb-4 lg:mb-0 lg:mt-30">
+              <CiFaceSmile className="h-12 w-12" />
+              <h6 className="text-xl  pt-3">150M+</h6>
+              <h6>Happy Customers</h6>
+            </div>
+            <div className="text-yellow-500 flex flex-col items-center justify-center   pt-5   mb-4 lg:mb-0 lg:mt-30">
+              <FaRegCheckCircle className="h-12 w-12" />
+              <h6 className="text-xl  pt-3">100%</h6>
+              <h6>Quality Products</h6>
+            </div>
+            <div className="text-yellow-500 flex flex-col items-center  pt-5  h-50 w-50 justify-center">
+              <GoTrophy className="h-12 w-12" />
+              <h6 className="text-xl  pt-3">30++</h6>
+              <h6>Awards</h6>
+            </div>
+          </section>
       </div>
     </section>
   );
