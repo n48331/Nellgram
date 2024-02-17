@@ -30,8 +30,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
       href: "/#products",
     },
     {
-      title: "RECIPES",
-      href: "/#recipes",
+      title: "QUALITY",
+      href: "/quality",
     },
     {
       title: "ABOUT US",
@@ -43,7 +43,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
     },
   ];
   return (
-    <div className="w-full md:bg-theme-color">
+    <div className="w-full md:bg-theme-color sticky top-0 z-10 bg-[#fff]">
       <nav className="mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-fit items-center justify-between">
           <div className="flex md:flex-1 items-center md:items-center md:justify-between">
@@ -81,8 +81,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     <Image
                       src={smallLogo}
                       alt="small logo" 
-                      width={150}
-                      height={150} 
+                      width={120}
+                      height={120} 
                     />
                   </Link>
                 </div>

@@ -10,7 +10,7 @@ export default function Home() {
     <main className="flex flex-col justify-center md:bg-primary w-full overflow-hidden">
       <BannnerSection />
       <ProductSection />
-      <RecipeSection />
+      {/* <RecipeSection /> */}
       <ProcessAndQuality />
       <CustomerReview />
     </main>

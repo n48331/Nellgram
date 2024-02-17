@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Domine } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import NextTopLoader from 'nextjs-toploader';
 
-const inter = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600"],
+const inter = Domine({
   subsets: ["latin"],
 });
 

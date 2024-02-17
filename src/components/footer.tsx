@@ -1,17 +1,17 @@
 import Link from "next/link";
 import { FunctionComponent } from "react";
 
-interface FooterProps {}
+interface FooterProps { }
 
 const Footer: FunctionComponent<FooterProps> = () => {
   return (
     <footer
       className="w-full min-h-[276px] bg-black text-white "
       id="footer"
-      style={{background:'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/image/footer.png)', backgroundSize:'cover'}}
-      
+      style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/image/footer.png)', backgroundSize: 'cover' }}
+
     >
-      
+
       <div className="w-full h-full my-8 flex flex-col md:flex-row px-16 justify-between gap-6 ">
         <div className="flex flex-col w-full md:w-[50%]" id="contact">
           <div className="flex flex-col gap-6 text-lg font-medium">
@@ -52,7 +52,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                 </svg>
               </div>
               <p className="text-wrap text-lg font-normal">
-                Sales@nellgram.com
+                sales@nellgram.com
               </p>
             </div>
             <div className="flex gap-2 items-center">
@@ -107,10 +107,10 @@ const Footer: FunctionComponent<FooterProps> = () => {
         <div className="flex flex-col w-full  md:w-[50%]">
           <h4 className="text-xl">Links</h4>
           <div className="h-full mt-5 flex gap-4 font-extralight text-sm sm:text-lg">
-            <Link href={""}>Home</Link>
-            <Link href={""}>About</Link>
-            <Link href={""}>Recipes</Link>
-            <Link href={""}>Products</Link>
+            <Link href={"/"}>Home</Link>
+            <Link href={"/#about"}>About</Link>
+            <Link href={"/quality"}>Quality</Link>
+            <Link href={"/#products"}>Products</Link>
           </div>
         </div>
       </div>
