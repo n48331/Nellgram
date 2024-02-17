@@ -11,7 +11,7 @@ const RecipeSection: FunctionComponent<RecipeSectionProps> = () => {
       className="flex flex-col justify-around items-center pb-28"
       id="recipes"
     >
-      <h4 className="font-semibold text-4xl">Recipes</h4>
+      <h4 className="font-semibold text-4xl">RECIPES</h4>
       <div className="flex gap-8 mt-8  px-8 w-full justify-center flex-wrap md:flex-nowrap">
         <RecipesCard
           photo={{
@@ -43,7 +43,7 @@ const RecipeSection: FunctionComponent<RecipeSectionProps> = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
          className="bg-theme-color text-white rounded-full px-4 py-2">
-          view All
+          View All
         </motion.button>
       </div>
     </section>

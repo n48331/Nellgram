@@ -8,8 +8,10 @@ const Footer: FunctionComponent<FooterProps> = () => {
     <footer
       className="w-full min-h-[276px] bg-black text-white "
       id="footer"
-      style={{background:'url(/image/footer.png)', backgroundSize:'cover'}}
+      style={{background:'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/image/footer.png)', backgroundSize:'cover'}}
+      
     >
+      
       <div className="w-full h-full my-8 flex flex-col md:flex-row px-16 justify-between gap-6 ">
         <div className="flex flex-col w-full md:w-[50%]" id="contact">
           <div className="flex flex-col gap-6 text-lg font-medium">

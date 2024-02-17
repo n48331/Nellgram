@@ -1,5 +1,9 @@
 import Image from "next/image";
 import banner from "../../public/image/banner.png";
+import { PiHandshake } from "react-icons/pi";
+import { CiFaceSmile } from "react-icons/ci";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { GoTrophy } from "react-icons/go";
 import { FunctionComponent } from "react";
 
 interface BannnerSectionProps {}
@@ -7,23 +11,23 @@ interface BannnerSectionProps {}
 const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
   return (
     <section className=" justify-center" id="home">
-      <div className="relative h-[50vh] max-h-[50vh] w-[100vw]">
+      <div className="relative h-[60vh] max-h-[60vh] w-[100vw]">
         <Image
           src={banner}
           alt={"banner"}
           fill={true}
-          className="content-end object-cover"
+          className="content-end object-cover  "
         />
       </div>
 
       <div className="w-full mx-auto text-center pt-10 md:pt-28 px-8">
-        <h4 className="font-semibold text-5xl inline-block py-4 md:py-8">
+        <h1 className="font-semibold text-5xl inline-block py-4 md:py-8">
           Welcome to Nellgram
-        </h4>
+        </h1>
         <br />
-        <h5 className="font-semibold text-2xl inline-block">
-          Welcome to Nellgram where every meal is a journey back home.
-        </h5>
+        <h6 className="font-semibold text-2xl inline-block">
+           where every meal is a journey back home.
+        </h6>
         <br />
         <br />
         <p className="font-light text-xl overflow-clip mx-auto max-w-screen-md ">
@@ -35,6 +39,28 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
           delicious. Your kitchen deserves the best, and we&apos;re here to deliver
           it to your doorstep!
         </p>
+        <section className="flex flex-col items-center mt-10 lg:mt-30 lg:flex-row lg:justify-around">
+          <div className="text-yellow-500 flex flex-col items-center mb-4">
+            <PiHandshake className="h-12 w-12" />
+            <h6 className="text-xl">55</h6>
+            <h6>Years Of Trust</h6>
+          </div>
+          <div className="text-yellow-500 flex flex-col items-center  mb-4">
+            <CiFaceSmile className="h-12 w-12" />
+            <h6 className="text-xl">150M+</h6>
+            <h6>Happy Customers</h6>
+          </div>
+          <div className="text-yellow-500 flex flex-col items-center mb-4">
+            <FaRegCheckCircle className="h-12 w-12" />
+            <h6 className="text-xl">100%</h6>
+            <h6>Quality Products</h6>
+          </div>
+          <div className="text-yellow-500 flex flex-col items-center">
+            <GoTrophy className="h-12 w-12" />
+            <h6 className="text-xl">30++</h6>
+            <h6>Awards</h6>
+          </div>
+        </section>
       </div>
     </section>
   );

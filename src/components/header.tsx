@@ -64,42 +64,29 @@ const Header: FunctionComponent<HeaderProps> = () => {
                 className="block md:hidden"
               />
             </div>
-            <div className="hidden sm:ml-6 md:block">
-              <div className="flex space-x-4 items-center">
-                {navLinks.map((items, index) => {
-                  if (index === navLinks.length / 2) {
-                    return (
-                      <>
-                        <Link href="#" className="text-white">
-                          <Image
-                            src={smallLogo}
-                            alt={"small logo"}
-                            width={200}
-                            height={200}
-                          />
-                        </Link>
-                        <Link
-                          href={items.href}
-                          className="text-white rounded-md px-3 py-2 text-sm font-semibold"
-                        >
-                          {items.title}
-                        </Link>
-                      </>
-                    );
-                  }
-                  return (
-                    // eslint-disable-next-line react/jsx-key
+            
+              <div className="hidden sm:ml-6 md:block">
+                <div className="flex space-x-4 items-center">
+                  {navLinks.map((item, index) => (
                     <Link
-                      href={items.href}
+                      key={index}
+                      href={item.href}
                       className="text-white rounded-md px-3 py-2 text-sm font-semibold"
-                      aria-current="page"
                     >
-                      {items.title}
+                      {item.title}
                     </Link>
-                  );
-                })}
+                  ))}
+                  
+                  <Link href="#" className="text-white">
+                    <Image
+                      src={smallLogo}
+                      alt="small logo" 
+                      width={150}
+                      height={150} 
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
             <button

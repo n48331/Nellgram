@@ -12,7 +12,7 @@ const ProductSection: FunctionComponent<ProductSectionProps> = () => {
       className=" flex flex-col justify-around items-center py-28"
       id="products"
     >
-      <h4 className="font-semibold text-4xl">Products</h4>
+      <h4 className="font-semibold text-4xl">PRODUCTS</h4>
       <div className="flex gap-8 mt-8 px-8 relative w-full justify-center flex-wrap md:flex-nowrap">
         <ProductCard
           title={"PuttuPodi"}
@@ -37,7 +37,7 @@ const ProductSection: FunctionComponent<ProductSectionProps> = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className="bg-theme-color text-white rounded-full px-4 py-2">
-          view All
+          View All
         </motion.button>
         </Link>
       </div>
