@@ -32,7 +32,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                   />
                 </svg>
               </div>
-              <p className="text-wrap text-lg font-normal">+91 98979694</p>
+              <p className="text-wrap text-lg font-normal" style={{textDecoration:'none'}}>+91 98979694</p>
             </div>
             <div className="flex gap-2 items-center">
               <div>
@@ -51,7 +51,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                   />
                 </svg>
               </div>
-              <p className="text-wrap text-lg font-normal">
+              <p className="text-wrap text-lg font-normal" style={{textDecoration:'none'}}>
                 sales@nellgram.com
               </p>
             </div>
