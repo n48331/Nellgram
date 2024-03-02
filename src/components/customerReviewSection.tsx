@@ -11,8 +11,8 @@ const CustomerReview: FunctionComponent<CustomerReviewProps> = () => {
     >
       <h4 className="font-semibold text-4xl">From our Customer</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center  mt-8">
-        <ReviewCard />
-        <ReviewCard />
+        <ReviewCard name={'Ameen'} rating={5} date="Jan 16, 2024"/>
+        <ReviewCard name={'M Nabeel'} rating={4} date="Dec 28, 2023"/>
       </div>
       <div className=" mt-8">
         <button className="bg-slate-500 p-2 ml-1 hover:p-3 hover:bg-slate-800 cursor-pointer rounded-full">

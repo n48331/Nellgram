@@ -1,7 +1,7 @@
 import Image from "next/image";
 import banner from "../../public/image/banner.svg";
 import { PiHandshake } from "react-icons/pi";
-import { CiFaceSmile } from "react-icons/ci";
+import { FaRegFaceSmile } from "react-icons/fa6";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { GoTrophy } from "react-icons/go";
 import { FunctionComponent } from "react";
@@ -48,22 +48,22 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
           it to your doorstep!
         </p>
         <section className="flex flex-col lg:flex-row lg:justify-around" style={{padding:'4rem 0'}}>
-            <div className="text-yellow-500 flex flex-col items-center justify-center pt-5  mb-4 lg:mb-0 lg:mt-30">
+            <div className="text-theme-color flex flex-col items-center justify-center pt-5  mb-4 lg:mb-0 lg:mt-30">
               <PiHandshake className="h-12 w-12" />
               <h6 className="text-xl pt-3">2+</h6>
               <h6>Years Of Trust</h6>
             </div>
-            <div className="text-yellow-500 flex flex-col items-center justify-center  pt-5  mb-4 lg:mb-0 lg:mt-30">
-              <CiFaceSmile className="h-12 w-12" />
+            <div className="text-theme-color flex flex-col items-center justify-center  pt-5  mb-4 lg:mb-0 lg:mt-30">
+              <FaRegFaceSmile className="h-12 w-12" />
               <h6 className="text-xl  pt-3">15k+</h6>
               <h6>Happy Customers</h6>
             </div>
-            <div className="text-yellow-500 flex flex-col items-center justify-center   pt-5   mb-4 lg:mb-0 lg:mt-30">
+            <div className="text-theme-color flex flex-col items-center justify-center   pt-5   mb-4 lg:mb-0 lg:mt-30">
               <FaRegCheckCircle className="h-12 w-12" />
               <h6 className="text-xl  pt-3">100%</h6>
               <h6>Quality Products</h6>
             </div>
-            <div className="text-yellow-500 flex flex-col items-center  pt-5  h-50 w-50 justify-center">
+            <div className="text-theme-color flex flex-col items-center  pt-5  h-50 w-50 justify-center">
               <GoTrophy className="h-12 w-12" />
               <h6 className="text-xl  pt-3">3+</h6>
               <h6>Awards</h6>

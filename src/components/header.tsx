@@ -48,6 +48,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
         <div className="relative flex h-fit items-center justify-between">
           <div className="flex md:flex-1 items-center md:items-center md:justify-between">
             <div className="flex flex-shrink-0 items-center justify-between">
+              <Link href={'/'}>
               <Image
                 src={logo}
                 alt={"logo"}
@@ -55,7 +56,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                 height={180}
                 className="hidden md:block"
                 style={{padding:'0 1rem',margin:'1rem 0'}}
-              />
+                />
               <Image
                 src={greenLogo}
                 alt={"logo"}
@@ -63,7 +64,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
                 height={180}
                 style={{padding:'0 1rem',margin:'1rem 0'}}
                 className="block md:hidden"
-              />
+                />
+                </Link>
             </div>
             
               <div className="hidden sm:ml-6 md:block">
