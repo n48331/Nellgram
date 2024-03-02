@@ -51,15 +51,16 @@ const Header: FunctionComponent<HeaderProps> = () => {
               <Image
                 src={logo}
                 alt={"logo"}
-                width={200}
-                height={200}
+                width={180}
+                height={180}
                 className="hidden md:block"
+                style={{padding:'0 1rem',margin:'1rem 0'}}
               />
               <Image
                 src={greenLogo}
                 alt={"logo"}
-                width={200}
-                height={200}
+                width={180}
+                height={180}
                 style={{padding:'0 1rem',margin:'1rem 0'}}
                 className="block md:hidden"
               />
