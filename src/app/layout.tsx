@@ -11,7 +11,7 @@ const inter = Inter({
 })
 export const metadata: Metadata = {
   title: "Nellgram",
-  description: "Nellgram",
+  description: "Where Every Meal Is a Journey Back Home",
 };
 
 export default function RootLayout({
