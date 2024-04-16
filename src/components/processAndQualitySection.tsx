@@ -30,7 +30,7 @@ const ProcessAndQuality: FunctionComponent<ProcessAndQualityProps> = () => {
           <Link href={'/quality'}>
           <button className="flex gap-1 items-center mt-8">
             <span>See More</span>
-            <span className='rounded-full border-2 md:bg-primary border-black px-2 hover:bg-[#229107]'>
+            <span className='rounded-full border-2 md:bg-white border-black px-2 hover:bg-[#229107]'>
               {">"}
             </span>
           </button>

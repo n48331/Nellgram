@@ -18,7 +18,7 @@ const config: Config = {
       },
       colors: {
         "theme-color": "rgba(34, 145, 7, 1)",
-        primary: "rgba(243, 255, 220, 1)",
+        primary: "rgba(255, 255, 225, 1)",
         "card-title-bg": "rgba(7, 255, 240, 0.05)",
       },
       fontFamily: {

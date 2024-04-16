@@ -8,7 +8,7 @@ type Props = {
 };
 export const Card = (props: Props) => {
     return (
-        <div className="border-2 rounded-2xl border-[#5707FF]">
+        <div className="border-2 rounded-2xl border-[rgba(34, 145, 7, 1)]">
             <div className="p-6 md:p-8 lg:p-5">
                 <Image
                     src={`/image/products/${props.imgURL}`}
@@ -20,9 +20,9 @@ export const Card = (props: Props) => {
                 <div className="my-2 font-semibold text-xl md:text-xl lg:text-2xl">
                     {props.title}
                 </div>
-                <div className="text-sm md:text-xl lg:text-xl">
+                {/* <div className="text-sm md:text-xl lg:text-xl">
                     {props.desc}
-                </div>
+                </div> */}
             </div>
         </div>
     );

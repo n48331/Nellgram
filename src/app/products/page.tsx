@@ -13,22 +13,22 @@ const products = [
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
   },
   {
-    name: 'pathiri podi',
+    name: 'Pathiri Podi',
     imgURL: 'pathiri podi.jpg',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
   },
   {
-    name: 'Chilli powder',
+    name: 'Chilli Powder',
     imgURL: 'Chilli powder.jpg',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
   },
   {
-    name: 'Rice powder',
+    name: 'Rice Powder',
     imgURL: 'Rice powder.jpg',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
   },
   {
-    name: 'Coriander powder',
+    name: 'Coriander Powder',
     imgURL: 'coriander powder.jpg',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore'
   },
@@ -44,6 +44,7 @@ const products = [
   },
 ]
 
+
 const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
   return (
     <main>
@@ -54,7 +55,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
           className="object-cover h-full w-full"
         />
         <div className="absolute top-0 right-0 w-full h-full flex justify-center items-center text-xl md:text-2xl font-semibold">
-          <h3 className="">Products</h3>
+          <h3 className="text-4xl uppercase font-bold">Products</h3>
         </div>
       </div>
       <div className="py-8 md:py-14 lg:py-20">

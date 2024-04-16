@@ -7,7 +7,7 @@ import CustomerReview from "@/components/customerReviewSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center md:bg-primary w-full overflow-hidden">
+    <main className="flex flex-col justify-center md:bg-white w-full overflow-hidden">
       <BannnerSection />
       <ProductSection />
       {/* <RecipeSection /> */}

@@ -33,8 +33,8 @@ const BannnerSection: FunctionComponent<BannnerSectionProps> = () => {
           Welcome to Nellgram
         </h1>
         <br />
-        <h6 className="font-semibold text-2xl inline-block">
-           where every meal is a journey back home.
+        <h6 className="font-semibold text-2xl inline-block italic">
+        Where Every Meal Is a Journey Back Home.
         </h6>
         <br />
         <br />
