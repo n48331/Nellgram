@@ -20,11 +20,7 @@ const QuallityPage: FunctionComponent<QuallityPageProps> = () => {
         </div>
         <div className="py-4 px-10 md:py-8 md:leading-10 md:text-xl font-medium ">
           <p>
-            The production of all Nellgram products takes place at VIDYANAGAR
-            OIL ANDFLOUR MILL in Kasaragod. With a legacy spanning over 30
-            years, this home grownmill has been serving people around Mangalore
-            and Malabar regions for years.Wetake immense pride in bringing to
-            you Kerala&apos;s culinary heritage.—the real andauthentic one.
+          At Nellgram, we&apos;re dedicated to crafting the tastiest and most authentic Kerala culinary delights. Our products are meticulously crafted using traditional methods and the highest quality ingredients, ensuring a truly genuine taste experience. With a legacy of over 30 years, we take pride in serving the Mangalore and Malabar regions with the essence of Kerala&apos;s rich culinary heritage. From our kitchen to your table, experience the real flavors of Kerala with Nellgram.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center justify-between gap-4 py-4 md:py-10">
             <div>
