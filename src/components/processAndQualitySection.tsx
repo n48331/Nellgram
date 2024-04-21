@@ -22,7 +22,7 @@ const ProcessAndQuality: FunctionComponent<ProcessAndQualityProps> = () => {
         </div>
         <div className=" ">
           <p>
-            Nellgram is here to share a piece of South Indian&apos;s heartwarming food culture with you all over UAE. Experience the pure goodness of rice varieties and breakfast mixes without the worry of artificial preservatives. Each and every product we serve carries the essence of tradition, offering you a taste of home that&apos;s real, honest, and delicious. Your kitchen deserves the best, and we&apos;re here to deliver it to your doorstep!
+            At Nellgram, we&apos;re dedicated to crafting the tastiest and most authentic Kerala culinary delights. Our products are meticulously crafted using traditional methods and the highest quality ingredients, ensuring a truly genuine taste experience. With a legacy of over 30 years, we take pride in serving the Mangalore and Malabar regions with the essence of Kerala&apos;s rich culinary heritage. From our kitchen to your table, experience the real flavors of Kerala with Nellgram.
           </p>
           <Link href={'/quality'}>
           <button className="flex gap-1 items-center mt-8">
