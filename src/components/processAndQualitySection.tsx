@@ -22,10 +22,7 @@ const ProcessAndQuality: FunctionComponent<ProcessAndQualityProps> = () => {
         </div>
         <div className=" ">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia
-            eum ducimus a explicabo, consequuntur, necessitatibus molestias
-            doloribus veritatis ratione aperiam tempora saepe recusandae
-            voluptatum facere sit odit doloremque repudiandae.
+            Nellgram is here to share a piece of South Indian&apos;s heartwarming food culture with you all over UAE. Experience the pure goodness of rice varieties and breakfast mixes without the worry of artificial preservatives. Each and every product we serve carries the essence of tradition, offering you a taste of home that&apos;s real, honest, and delicious. Your kitchen deserves the best, and we&apos;re here to deliver it to your doorstep!
           </p>
           <Link href={'/quality'}>
           <button className="flex gap-1 items-center mt-8">
