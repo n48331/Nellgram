@@ -22,10 +22,7 @@ const ProcessAndQuality: FunctionComponent<ProcessAndQualityProps> = () => {
         </div>
         <div className=" ">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia
-            eum ducimus a explicabo, consequuntur, necessitatibus molestias
-            doloribus veritatis ratione aperiam tempora saepe recusandae
-            voluptatum facere sit odit doloremque repudiandae.
+            At Nellgram, we&apos;re dedicated to crafting the tastiest and most authentic Kerala culinary delights. Our products are meticulously crafted using traditional methods and the highest quality ingredients, ensuring a truly genuine taste experience. With a legacy of over 30 years, we take pride in serving the Mangalore and Malabar regions with the essence of Kerala&apos;s rich culinary heritage. From our kitchen to your table, experience the real flavors of Kerala with Nellgram.
           </p>
           <Link href={'/quality'}>
           <button className="flex gap-1 items-center mt-8">
