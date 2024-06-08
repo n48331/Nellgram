@@ -29,7 +29,6 @@ export default function RootLayout({
       <body className={inter.className}>
       <NextTopLoader />
         <main className="flex flex-col items-center justify-between relative">
-          404
           <Header />
           {children}
           <Footer />
