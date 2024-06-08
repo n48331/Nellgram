@@ -114,6 +114,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
           </div>
         </div>
       </div>
+      <div className="text-right text-xs p-2">© {new Date().getFullYear()} All Rights Reserved. Designed & Coded with ❤️️ by <a target="_blank" href="https://www.ameenkoya.in/">ameenkoya.in</a> & <a target="_blank" href="https://www.mnabeel.in/">mnabeel.in</a></div>
     </footer>
   );
 };

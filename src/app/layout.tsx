@@ -30,9 +30,9 @@ export default function RootLayout({
       <NextTopLoader />
         <main className="flex flex-col items-center justify-between relative">
           404
-          {/* <Header />
+          <Header />
           {children}
-          <Footer /> */}
+          <Footer />
         </main>
       </body>
     </html>
